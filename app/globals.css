@@ -151,4 +151,14 @@
   .print\:pb-4 {
     padding-bottom: 1rem !important;
   }
+
+  /* Added print-specific styles for better PDF output */
+  @page {
+    margin: 0.5in;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 }
